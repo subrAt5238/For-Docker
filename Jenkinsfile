@@ -9,7 +9,7 @@ pipeline {
         }
         stage('To install docker and show info') {
             steps {
-                sh 'docker info'
+                sh 'sudo docker info'
             }
         }
         
