@@ -7,6 +7,6 @@ sudo systemctl docker enable
 sudo usermode -aG docker ubuntu 
 sudo systemctl docker restart
 
-docker info
+sudo docker info
 
 
