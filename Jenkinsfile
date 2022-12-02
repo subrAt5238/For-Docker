@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'JDK-11-Docker'}
+    agent {label 'JDK-11-DOCKER'}
     stages {
         stage('pull code from git') {
             steps {
