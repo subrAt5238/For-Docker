@@ -1,9 +1,9 @@
 pipeline {
     agent {label 'JDK-11-Docker' }
     stages {
-        stage('To show docker info') {
+        stage('To install docker & show docker info') {
             steps {
-                sh 'sudo docker info'
+                sh 'sh docker.sh'
             }
         }
         
