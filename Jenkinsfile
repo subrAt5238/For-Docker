@@ -7,7 +7,7 @@ pipeline {
                 branch: 'master'
             }
         }
-        stage('To install docker & show docker info') {
+        stage('build docker image') {
             steps {
                 sh 'docker image build -t nginx:stable .'
             }
