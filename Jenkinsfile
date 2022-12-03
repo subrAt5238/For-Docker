@@ -9,7 +9,7 @@ pipeline {
         }
         stage('To install docker & show docker info') {
             steps {
-                sh 'sh docker.sh'
+                sh 'docker image build -t nginx:stable .'
             }
         }
         
