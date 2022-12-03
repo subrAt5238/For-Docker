@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build docker image') {
             steps {
-                sh 'docker image build -t nginx:stable .'
+                sh 'docker build -t nginx:alpine .'
             }
         }
         
