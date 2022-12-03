@@ -1,6 +1,6 @@
-FROM nginx:stable
+FROM nginx:ubuntu
 
-COPY default.conf /etc/nginx/conf.d/
+COPY nginx.conf /etc/nginx/nginx.d/
 COPY index.html /usr/share/nginx/html/hello
 
 EXPOSE 80
