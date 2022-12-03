@@ -10,7 +10,7 @@ pipeline {
         stage('build docker image') {
             steps {
                 sh 'docker build -t nginx:alpine .',
-                sh 'docker run -it -p 8080:80 nginx .'
+                sh 'docker run -it -p 8080:80 nginx'
             }
         }
         
